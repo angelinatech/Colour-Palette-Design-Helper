@@ -1,0 +1,143 @@
+:root{
+  --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --border: 1px groove #2c2c2c5f;
+}
+
+
+body{
+  background-image: url('https://github.com/Angelina12P/Colour-Palette-Design-Helper/blob/main/assets/images/quartz4.jpeg?raw=true'); 
+  height: 100vh;
+  max-width: auto;
+  padding: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  justify-content: center;
+}
+
+#colourPicker, #historyOfColours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+#eyedropperBtn, #result, #clearBtn {
+  width: 250px;
+  height: 100px;
+  border-radius: 15px;
+  background-color: var(--background);
+  background: linear-gradient(145deg, #ffa39cca, #d88983c1);
+  box-shadow:  15px 15px 30px #7a4e4a,
+             -15px -15px 30px #ffe2da;
+  border: var(--border);
+  box-shadow: var(--shadow);
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+#eyedropperBtn:hover, #result:hover, #clearBtn:hover{
+border-radius: 20px;
+background: linear-gradient(145deg, #d88983, #ffa39c);
+box-shadow:  15px 15px 30px #7a4e4a,
+             -15px -15px 30px #ffe2da;
+}
+
+.deleteBtn, #copyBtn {
+  width: 100%;
+  height: 20px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  background-color:  #952c649e ;  
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  align-self: center;
+}
+.deleteBtn:hover, #copyBtn:hover {
+background: linear-gradient(145deg, #86285abc, #9f2f6bcb);
+box-shadow:  5px 5px 50px #4c1633,
+}
+#copyBtn{
+  border: var(--border);
+  width: 60%;
+}
+
+#history {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#history div {
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  border: var(--border);
+  padding: 20px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex-wrap;
+  background-color: var(--background);
+}
+
+#colourList {
+  white-space: pre-line;
+  background-color: #ef979ac5 ; 
+  width:60%;
+  display:inline-block;
+  justify-self: center;
+  border-radius: 20px;
+
+}
+
+.colourHistory-row {
+  display: flex;
+  justify-content:space-around;
+  width: 90%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .colourHistory-row {
+    display: block;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    min-width: 30%;
+  }
+  #colourList{
+    width: 450px;
+  }
+  body{
+    padding: 20px;
+    margin: 0px;
+    background-repeat: repeat;
+  }
+
+  #history div {
+    font-size:25px;
+    max-width: 100%;
+    margin: 0px;
+    padding: 20px;
+    display: flex-wrap !important;
+  }
+
+  #result, #eyedropperBtn, #clearBtn{
+    font-size: 25px;
+  } 
+
+  #historyOfColours {
+    padding: 0px;
+    margin: 0px;
+  }
+
+}
