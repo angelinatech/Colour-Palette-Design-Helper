@@ -30,7 +30,7 @@ No installation necessary. Web application, can be accessed via the URL on your 
 
 The URL link is as follows: 
 [
-https://angelina12p.github.io/Colour-Palette-Design-Helper/
+https://angelinatech.github.io/Colour-Palette-Design-Helper/
 
 ## Credits
 
